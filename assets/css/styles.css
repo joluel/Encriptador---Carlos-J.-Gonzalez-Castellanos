@@ -1,0 +1,351 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+}
+
+html {
+    background-color: black;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    margin: 0 auto;
+    border: 2px solid #0A3871;
+    min-height: 100vh;
+    background-color: #F3F5FC;
+}
+
+                                                        /* ENCABEZADO */
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 0 10px;
+    align-items: center;
+}
+
+.titulo {
+    text-transform: uppercase;
+    color: #0A3871;
+}
+
+.redeSociales a {
+    margin: 0 10px;
+}
+                                                        /* ENCABEZADO */
+
+                                                        /* MAIN */
+main {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.izquierda {
+    width: 60%;
+    padding: 15px;
+    text-align: center;
+}
+
+.text-area {
+    margin: 50PX 0;
+    color: #0A3871;
+    text-align: center;
+    background-color: transparent;
+    text-transform: lowercase;
+    border: none;
+    border-radius: .5rem;
+}
+
+.text-area:hover {
+    box-shadow: 5px 5px 10px black;
+    transition: .5s;
+}
+
+::placeholder {
+    color: #0A3871;
+}
+
+.text-area:focus {
+    outline: none;
+}
+
+.info span{
+    font-size: 18px;
+}
+
+.info h6 {
+    text-align: left;
+    margin: 10px 0;
+    margin-left: 23%;
+    font-size: 16px;
+}
+
+.botones {
+    padding: 10px;
+}
+
+.btn-encriptar {
+    width: 250px;
+    padding: 10px;
+    margin-right: 4%;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: .5rem;
+    background-color: darkblue;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-encriptar:hover{
+    background-color: white;
+    color: #0A3871;
+    box-shadow: 5px 5px 10px black;
+    transition: .5s;
+}
+
+.btn-desencriptar{
+    width: 250px;
+    padding: 10px;
+    color: #0A3871;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: .5rem;
+    background-color:#D8DFE8 ;
+    cursor: pointer;
+}
+
+.btn-desencriptar:hover {
+    background-color: #0A3871;
+    color: #D8DFE8;
+    box-shadow: 5px 5px 10px black;
+    transition: .5s;
+}
+
+.derecha { 
+    width: 35%;
+    padding: 15px;
+    text-align: center;
+    background-color: white;    
+    border-radius: .5rem;
+}
+
+.mensaje {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 150px;
+    border: none;
+    border-radius: .5rem;
+    color: #0A3871;
+    background-color: transparent;
+    text-align: justify;
+    box-shadow: 5px 5px 10px black;
+}
+
+.mensaje:focus{
+    outline: none;
+}
+
+.copiar{
+    width: 30%;
+    height: auto;
+    margin-left: 30% ;
+    background-color: white;
+}
+
+.btn-copiar {
+    display: flex;
+    justify-content: center;
+    width: 150%;
+    height: 50px;
+    margin: 0 auto;
+    padding: 10px;
+    font-weight: bold;
+    border: 3px solid #0A3871;
+    border-radius: .5rem;
+    color: #0A3871;
+    cursor: pointer;
+}
+
+.btn-copiar:hover {
+    background-color: #0A3871;
+    color: #D8DFE8;
+    box-shadow: 5px 5px 10px black;
+    transition: .5s;
+}
+
+/* MAIN */
+
+footer{
+    /* position: fixed; */
+    /* bottom: 100%; */
+    width: 100%;
+    border-top: 2px solid black;
+    color: black;
+    text-align: center;
+    line-height: 50px;
+    background:linear-gradient(to bottom, white,  #0A3871);
+}
+
+footer p{
+    font-size: 20px;
+}
+
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .titulo h1 {
+        font-size: 20px;
+    }
+
+    main {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .izquierda {
+        width: 60%;
+    }
+
+    .info h6 {
+        margin-left: 9%;
+    }
+
+    .botones {
+        display: flex;
+        justify-content: center;
+    }
+
+    .derecha {
+        width: 40%;
+    }
+
+    .mensaje {
+        width: 90%;
+    }
+}
+
+@media (max-width:600px) {
+    header {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    main {
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .titulo {
+        margin: 10px 0;
+    }
+
+    .redeSociales {
+        margin-top: 10px;
+    }
+
+    .izquierda {
+        width: 100%;
+    }
+    
+    .text-area {
+        padding: 10px;
+    }
+
+    .derecha {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .mensaje {
+        margin-bottom: 50px;
+    }
+
+    footer {
+        border-top: 2px solid black;
+    }
+}
+
+@media (max-width:480px) {
+    header {
+        width: 100%;
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .titulo {
+        margin: 20px;
+    }
+
+    main {
+        flex-direction: column;
+        flex: 1;
+        margin-bottom: 300px;
+    }
+
+    .izquierda{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .text-area {
+        width: 90%;
+    }
+
+    .info h6{
+        text-align: center;
+        margin-left: 2%;
+    }
+
+    .botones {
+        display: block;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .btn-encriptar {
+        margin-bottom: 20px;
+    }
+
+    .derecha {
+        display: block;
+        justify-content: center;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .mensaje {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+}

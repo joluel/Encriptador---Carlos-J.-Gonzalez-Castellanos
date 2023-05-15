@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" href="./assets/icons/locked-with-key-svgrepo-com.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./assets/img/Logo.png" alt="Logo">
+        </div>
+        <div class="titulo">
+            <h1>Encriptador - Carlos J. Gonzalez C.</h1>
+        </div>
+        <div class="redeSociales">
+            <a href="https://github.com/joluel" target="_blank"><img src="./assets/icons/redes sociales/github-142-svgrepo-com.svg" alt="GitHub" width="40px" height="40px"></a>
+            <a href="https://www.linkedin.com/in/carlos-jose-gonzalez-castellanos-391467237/" target="_blank"><img src="./assets/icons/redes sociales/linkedin-linked-in-svgrepo-com.svg" alt="linkedin" width="40px" height="40px"></a>
+            <a href="https://www.youtube.com/channel/UCi6mUdNyidSOSrXGG9cYIPQ" target="_blank"><img src="./assets/icons/redes sociales/youtube-svgrepo-com.svg" alt="Youtube" width="40px" height="40px"></a>
+        </div>
+    </header>
+
+    <main>
+        <section class="izquierda">
+            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui!"></textarea>
+            <div class="info">
+                <h6> <span class="material-symbols-outlined">
+                    info
+                    </span> Solo letras minusculas y sin acentos.</h6>
+            </div>
+
+            <div class="botones">
+                <button class="btn-encriptar" onclick="btnEncriptar()">Encriptador</button>
+                <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptador</button>
+            </div>
+        </section>
+
+        <section class="derecha">
+            <textarea class="mensaje" cols="30" rows="10"></textarea>
+            <div class="copiar">
+                <button class="btn-copiar" onclick="copiarTexto()">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+            <p><strong>Elaborado por: </strong> Carlos Jose Gonzalez Castellanos</p>
+            <p><strong>WhatsApp: </strong>+57-3242841366</p>
+            <p><strong>Email: </strong>josejhoel89@gmail.com</p>
+            <p>Colombia.</p>
+    </footer>
+    
+
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>
